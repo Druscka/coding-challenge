@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Challenge</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="script/smartscroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </head>
+  <body>
+    <div class="section-wrapper" id="fullpage">
+      <div class="navigation" id="navigation">
+        <div class="logo">
+          <img src="img/logo-small-white.svg" alt="logo" />
+        </div>
+        <div class="menu">
+          <a href="#slide-1">Home</a>
+          <a href="#slide-2">Portfolio</a>
+          <a href="#slide-3">Packages</a>
+        </div>
+      </div>
+      <div class="section welcome" id="slide-1">
+        <div class="content_welcome">
+          <h1>Company Name</h1>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis,
+            et quaerat! Doloremque laboriosam debitis culpa voluptatem inventore
+            vel neque dolore suscipit nulla! Modi distinctio voluptas
+            praesentium reiciendis, explicabo officiis fuga.
+          </h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis,
+            et quaerat! Doloremque laboriosam debitis culpa voluptatem inventore
+            vel neque dolore suscipit nulla! Modi distinctio voluptas
+            praesentium reiciendis, explicabo officiis fuga.
+          </p>
+          <div class="mouse">
+            <div class="scrolling"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section portfolio" id="slide-2">
+        <div class="content_portfolio">
+          <div class="carousel">
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="img/1.png" />
+            </div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="img/2.jpg" />
+            </div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="img/3.png" />
+            </div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="img/4.jpg" />
+            </div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="img/5.jpg" />
+            </div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="img/6.png" />
+            </div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="img/7.png" />
+            </div>
+            <div class="carousel-cell">
+              <img data-flickity-lazyload="img/8.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section packages" id="slide-3">
+        <div class="content_packages">
+          <h1>Packages</h1>
+          <div
+            class="carousel"
+            data-flickity='{ "groupCells": true, "autoPlay": true, "prevNextButtons": false }'
+          >
+            <div class="carousel-cell">
+              <h2>Package #1</h2>
+              <ul>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+                <li>Option 5</li>
+              </ul>
+            </div>
+            <div class="carousel-cell">
+              <h2>Package #2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea
+                eveniet labore qui, doloribus repudiandae hic ratione.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea
+                eveniet labore qui, doloribus repudiandae hic ratione.
+              </p>
+            </div>
+            <div class="carousel-cell">
+              <h2>Package #3</h2>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  ea eveniet labore qui.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  ea eveniet labore qui.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  ea eveniet labore qui.
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-cell">
+              <h2>Package #4</h2>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  ea eveniet labore qui.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  ea eveniet labore qui.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  ea eveniet labore qui.
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-cell">
+              <h2>Package #5</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea
+                eveniet labore qui, doloribus repudiandae hic ratione.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea
+                eveniet labore qui, doloribus repudiandae hic ratione.
+              </p>
+            </div>
+            <div class="carousel-cell">
+              <h2>Package #6</h2>
+              <ul>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+                <li>Option 5</li>
+              </ul>
+            </div>
+            <div class="carousel-cell">
+              <h2>Package #7</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea
+                eveniet labore qui, doloribus repudiandae hic ratione.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea
+                eveniet labore qui, doloribus repudiandae hic ratione.
+              </p>
+            </div>
+            <div class="carousel-cell">
+              <h2>Package #8</h2>
+              <ul>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+                <li>Option 5</li>
+              </ul>
+            </div>
+            <div class="carousel-cell">
+              <h2>Package #9</h2>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  ea eveniet labore qui.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  ea eveniet labore qui.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  ea eveniet labore qui.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer-logo">
+            <img src="img/logo-small-black.svg" alt="footer-logo" />
+            <p>&copy; 2019 Jones and Palmer</p>
+          </div>
+          <div class="footer-menu">
+            <a href="">Accesibility</a><span> | </span>
+            <a href="">Privacy Policy</a><span> | </span>
+            <a href="">Sitemap</a>
+          </div>
+          <div class="footer-logo-2">
+            <img src="img/logo-full-black.svg" alt="footer-logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $.smartscroll();
+    </script>
+    <script type="text/javascript">
+      var carousel = document.querySelector(".carousel");
+      var flkty = new Flickity(carousel, {
+        percentPosition: true,
+        autoPlay: true,
+        lazyLoad: 3
+      });
+
+      var imgs = carousel.querySelectorAll(".carousel-cell img");
+      // get transform property
+      var docStyle = document.documentElement.style;
+      var transformProp =
+        typeof docStyle.transform == "string" ? "transform" : "WebkitTransform";
+
+      flkty.on("scroll", function() {
+        flkty.slides.forEach(function(slide, i) {
+          var img = imgs[i];
+          var x = ((slide.target + flkty.x) * -1) / 3;
+          img.style[transformProp] = "translateX(" + x + "px)";
+        });
+      });
+    </script>
+
+    <script>
+      var $root = $("html, body");
+
+      $('a[href^="#"]').click(function() {
+        $root.animate(
+          {
+            scrollTop: $($.attr(this, "href")).offset().top
+          },
+          500
+        );
+
+        return false;
+      });
+    </script>
+
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navigation").style.top = "0";
+        } else {
+          document.getElementById("navigation").style.top = "-80px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+
+    <!-- <script>
+      window.onload = function() {
+        
+      };
+	</script> -->
+  </body>
+</html>
