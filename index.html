@@ -18,14 +18,11 @@
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
+    <link rel="stylesheet" href="css/flickity.css" />
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script/flickity.pkgd.min.js"></script>
   </head>
   <body>
     <div class="section-wrapper scroll-container" id="main">
@@ -92,10 +89,7 @@
       <div class="page packages" id="three">
         <div class="content_packages">
           <h1>Packages</h1>
-          <div
-            class="carousel"
-            data-flickity='{ "groupCells": true, "autoPlay": true, "prevNextButtons": false }'
-          >
+          <div class="carousel" data-flickity='{ "groupCells": true }'>
             <div class="carousel-cell">
               <h2>Package #1</h2>
               <ul>
@@ -230,12 +224,13 @@
       </div>
     </div>
 
-    <script type="text/javascript">
+    <script>
       var carousel = document.querySelector(".carousel");
       var flkty = new Flickity(carousel, {
         percentPosition: true,
         autoPlay: true,
-        lazyLoad: 3
+        lazyLoad: 3,
+        prevNextButtons: false
       });
 
       var imgs = carousel.querySelectorAll(".carousel-cell img");
@@ -269,9 +264,6 @@
     </script>
 
     <script>
-      /* See related post at
-https://codepen.io/Javarome/post/full-page-sliding
-*/
       function ScrollHandler(pageId) {
         var page = $("#" + pageId);
         var pageStart = page.offset().top;
